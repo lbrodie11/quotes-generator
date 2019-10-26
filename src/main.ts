@@ -5,6 +5,7 @@ const http = new HttpService();
 const logger = Logger;
 
 async function runQuoteGenerator() {
+  setTimeout(async () => {
   try {
     const favQsQuote = await http
       .get('https://favqs.com/api/qotd')
@@ -23,6 +24,7 @@ async function runQuoteGenerator() {
   } catch (err) {
     logger.error(err);
   }
+}, 5500000);
 
   setTimeout(async () => {
     try {
@@ -43,7 +45,7 @@ async function runQuoteGenerator() {
     } catch (err) {
       logger.error(err);
     }
-  }, 1500000);
+  }, 6500000);
 
   setTimeout(async () => {
     try {
@@ -66,7 +68,7 @@ async function runQuoteGenerator() {
     } catch (err) {
       logger.error(err);
     }
-  }, 2500000);
+  }, 7500000);
 
   setTimeout(async () => {
     try {
@@ -88,7 +90,7 @@ async function runQuoteGenerator() {
     } catch (err) {
       logger.error(err);
     }
-  }, 3500000);
+  }, 8500000);
 }
 
 runQuoteGenerator();
