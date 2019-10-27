@@ -24,7 +24,7 @@ async function runQuoteGenerator() {
   } catch (err) {
     logger.error(err);
   }
-}, 5500000);
+}, 7500000);
 
   setTimeout(async () => {
     try {
@@ -45,7 +45,7 @@ async function runQuoteGenerator() {
     } catch (err) {
       logger.error(err);
     }
-  }, 6500000);
+  }, 10000000);
 
   setTimeout(async () => {
     try {
@@ -68,7 +68,7 @@ async function runQuoteGenerator() {
     } catch (err) {
       logger.error(err);
     }
-  }, 7500000);
+  }, 15000000);
 
   setTimeout(async () => {
     try {
@@ -90,7 +90,7 @@ async function runQuoteGenerator() {
     } catch (err) {
       logger.error(err);
     }
-  }, 8500000);
+  }, 20000000);
 }
 
 runQuoteGenerator();
